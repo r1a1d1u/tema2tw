@@ -1,0 +1,193 @@
+body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding-left:30px;
+    padding-top:30px;
+    padding-right:5%;
+    padding-bottom:40px;
+}
+
+.head1 {
+
+    font-size:35px;
+    padding-bottom:20px;
+}
+
+
+/* CSS pentru nav bar */
+nav {
+    background-color: #000000;
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top:30px;
+    display: flex;
+    padding-bottom:15px;
+    margin:0px;
+    width:100%;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin:15px;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav a:hover {
+    
+    color: white;
+    font-size:10px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #404040;
+    padding-right:20px;
+}
+
+/* CSS pentru sectiunea principala */
+main {
+    padding: 20px;
+}
+
+/* CSS pentru Footer */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+ 
+    width: 100vw;
+    z-index: 100; 
+}
+.mail-img{
+
+    width:50px;
+    height:50px;
+}
+
+.logo img {
+    width: 75px; 
+}
+
+.contact-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    color:blue;
+}
+
+
+
+
+.contact-links li a {
+    margin-right: 15px;
+    color: blue;
+    background-color:white;
+    padding-top:8px;
+    padding-bottom:8px;
+
+    padding-right:20px;
+    padding-left:20px;
+    border-radius:1000px;
+    border-width:0px;
+}
+
+.contact-links li {
+    padding-top:20px;
+    
+}
+
+
+
+/* Responsive Mobil CSS */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    .head1 {
+        font-size:20px;
+        padding-bottom:15px;
+    }
+}
+
+/* CSS Grid Imagini */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-bottom: 60px;
+}
+
+.portfolio-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Stiluri specifice pentru pagina de contact */
+form {
+    width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+.about-me-photo img {
+    width: 150px;
+    height:150px;
+    max-width: 100%;
+    border-radius: 10px;
+}
